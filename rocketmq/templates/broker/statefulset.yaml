@@ -41,7 +41,7 @@ spec:
               value: {{ include "rocketmq-nameserver.fullname" . }}:9876
           ports:
             - name: ssh-port
-              containerPort: 2222
+              containerPort: 22
               protocol: TCP
             - name: broker
               containerPort: 10911
